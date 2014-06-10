@@ -134,6 +134,15 @@ header.title > h1 > a > span{
 }
 
 
+#help{
+    position: absolute;
+    top: 300px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: #BDBDBD;
+}
+
 
 
 

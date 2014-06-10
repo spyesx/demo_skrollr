@@ -36,6 +36,8 @@
 
 	<div id="container">
 
+		<div id="help">Scroll down to start and keep scrolling<br />↓</div>
+
 		<div id="frame"
 			data-start="top:2000px;" 
 	        data-<?php echo $framePosFrom; ?>-start="top:900px" 
