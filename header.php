@@ -21,5 +21,11 @@
                 echo '<link rel="stylesheet" href="css/app/'.$style.'">';
             }
         ?>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+    <div id="dashboard">
+        <div>x : <span id="dashboard-skrollr-x">0</span></div>
+    </div>
