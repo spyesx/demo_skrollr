@@ -17,8 +17,10 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+        <h1>R&amp;D Skrollr</h1>
         <ul>
             <li><a href="test1.php">Test 1</a></li>
+            <li><a href="card_effect.php">Card Effect</a></li>
         </ul>
     </body>
 </html>
