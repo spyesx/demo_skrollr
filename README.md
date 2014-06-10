@@ -13,9 +13,9 @@ grunt watch #to work
 
 ## How to create a test?
 
-1. Create a SCSS file in scss/app/my_test.scss
-2. Create my_test.php in the root directory
-3. Populate arrays $scripts and $styles as needed
-3. Add a link in index.php
-4. In a terminal : grunt watch
+1. Create a SCSS file in ``scss/app/my_test.scss``
+2. Create ``my_test.php`` in the root directory
+3. Populate arrays ``$scripts`` and ``$styles`` as needed
+3. Add a link in ``index.php``
+4. In a terminal : ``grunt watch`
 5. Ready to start
