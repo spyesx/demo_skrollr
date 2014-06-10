@@ -111,7 +111,27 @@ textarea {
     font-size:12px;
 }
 
-
+header.title{
+    top:50px;
+    left:20px;
+    position:fixed;
+    z-index:99999999;
+}
+header.title > h1{
+    margin-bottom:5px;
+}
+header.title > h1 > a{
+    margin:0;
+    font-size:13px;
+    font-weight:normal;
+    text-decoration:none;
+    color:blue;
+}
+header.title > h1 > a > span{
+    -webkit-transform:rotate(-180deg);
+            transform:rotate(-180deg);
+    display:inline-block;
+}
 
 
 
