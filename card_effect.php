@@ -9,7 +9,7 @@
 </header>
 
 <?php
-	function slidesPositions($nbSlides, $from, $distance)
+	function slidesPositions($nbSlides, $from, $pause, $transition)
 	{
 		$r = array();
 		$currentPos = $from;
@@ -17,15 +17,15 @@
 		{
 			$r['slide-'.$i] = array(
 				'from'       => $currentPos,
-				'to'         => $currentPos + $distance,
-				'transition' => $currentPos + $distance + $distance
+				'to'         => $currentPos + $pause,
+				'transition' => $currentPos + $pause + $transition
 			);
-			$currentPos = $currentPos + $distance;
+			$currentPos = $currentPos + $pause + $transition;
 		}
 
 		return $r;
 	}
-	$pos = slidesPositions(4, 1800, 800);
+	$pos = slidesPositions(4, 1800, 1000, 800);
 
 ?>
 
@@ -36,8 +36,8 @@
 		<div id="frame"
 			data-start="top:2000px;" 
 	        data-800-start="top:900px" 
-	        data-5000-start="top:5100px" 
-	        data-5800-start="top:5700px"
+	        data-7800-start="top:7900px" 
+	        data-8200-start="top:7500px"
 			>
 			<div id="frame-slider">
 				<div class="slide slide-1"
