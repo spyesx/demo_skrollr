@@ -51,6 +51,12 @@ $frameH : 400;
 	}
 }
 
+#caption{
+	position:absolute;
+	left: 50%;
+	margin-left: 120px;
+	z-index:20;
+}
 
 
 
@@ -71,18 +77,27 @@ $frameH : 400;
 		vertical-align:middle;
 		font-family: "didot_lightregular";
 		letter-spacing:1px;
+		left: 0;
+		position: absolute;
+
 
 		>ul, >ul>li{
 			margin:0;
 			padding:0;
 			list-style:none;
-			display:block;
+			display:inline-block;
+			position:absolute;
+			left:0;
+			top:0;
 		}
 
 		>ul>li{
-			width:100%;
-			display:none;
 			opacity:0;
+
+			> span{
+				display:table-cell;
+				vertical-align: middle;
+			}
 		}
 	}
 
@@ -96,6 +111,10 @@ $frameH : 400;
 			height:$diamondRedW +px;
 			width:$diamondRedH +px;
 			>ul, >ul>li{
+				height:$diamondRedW +px;
+				width:$diamondRedH +px;
+			}
+			>ul>li> span{
 				height:$diamondRedW +px;
 				width:$diamondRedH +px;
 			}
@@ -113,6 +132,10 @@ $frameH : 400;
 			height:$diamondWhiteW +px;
 			width:$diamondWhiteH +px;
 			>ul, >ul>li{
+				height:$diamondWhiteW +px;
+				width:$diamondWhiteH +px;
+			}
+			>ul>li> span{
 				height:$diamondWhiteW +px;
 				width:$diamondWhiteH +px;
 			}
