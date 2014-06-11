@@ -1,0 +1,32 @@
+body {
+  background: rgba(10,0,30,.9);
+  font-family: "gotham_mediumregular";
+  color: white;
+}
+
+body.index {
+  padding: 50px 20px;
+}
+
+a {
+  color: pink;
+/*  font-size: 13px;*/
+  text-decoration: none;
+}
+
+ul.tests {
+  margin: 0;
+  padding: 0 0 0 20px;
+/*  border-left: 2px solid white;*/
+  list-style: none;
+}
+
+li.test {
+  display: block;
+  margin-bottom: 10px;
+}
+
+li.test a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid pink;
+}
