@@ -1,6 +1,6 @@
 <?php
 	$scripts = array();
-	$styles = array('demo_exemple.css');
+	$styles = array('demo_example.css');
 	include('header.php');
 ?>
 
