@@ -120,6 +120,7 @@ header.title{
 }
 header.title > h1{
     margin-bottom:5px;
+    font-weight:normal;
 }
 header.title > h1 > a{
     margin:0;
