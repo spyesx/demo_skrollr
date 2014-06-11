@@ -3,7 +3,7 @@
         <?php
             foreach($scripts as $script)
             {
-                echo '<script src="js/app/'.$script.'"></script>';
+                echo '<script src="'.$script.'"></script>';
             }
         ?>
     </body>
