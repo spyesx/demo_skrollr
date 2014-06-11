@@ -55,7 +55,7 @@ $pointColor: #DA0101;
 		height:400px;
 		background-size: contain;
 		position:absolute;
-		top:400px;
+		top:1400px;
 		left:50%;
 		margin-left:-450px;
 
@@ -75,34 +75,33 @@ $pointColor: #DA0101;
 				position:absolute;
 				top:0;
 				left:0;
+			}
 
-				&.first{
+			&.dancingpoint-animate{
+				.first{
 					animation-name: dancingpoint;
 					animation-duration: 2s;
 					animation-timing-function: linear;
-					
 					animation-iteration-count: infinite;
 					animation-direction: alternate;
 					animation-play-state: running;
 					background:#F0A8A8;
 				}
 
-				&.second{
+				.second{
 					animation-name: dancingpoint;
 					animation-duration: 2s;
 					animation-timing-function: linear;
-
 					animation-iteration-count: infinite;
 					animation-direction: alternate;
 					animation-play-state: running;
 					background:#AD5E5E;
 				}
 
-				&.third{
+				.third{
 					animation-name: dancingpoint;
 					animation-duration: 2s;
 					animation-timing-function: linear;
-
 					animation-iteration-count: infinite;
 					animation-direction: alternate;
 					animation-play-state: running;
@@ -114,51 +113,27 @@ $pointColor: #DA0101;
 				top: 275px;
 				left: 594px;
 
-				.first{
-					animation-delay: 0s;
-				}
-
-				.second{
-					animation-delay: .5s;
-				}
-
-				.third{
-					animation-delay: 1s;
-				}
+				.first{ animation-delay: 0s; }
+				.second{ animation-delay: .5s; }
+				.third{ animation-delay: 1s; }
 			}
 
 			&.dancingpoint-melbourne{
 				top: 314px;
 				left: 537px;
 
-				.first{
-					animation-delay: .5s;
-				}
-
-				.second{
-					animation-delay: 1s;
-				}
-
-				.third{
-					animation-delay: 1.5s;
-				}
+				.first{ animation-delay: .5s; }
+				.second{ animation-delay: 1s; }
+				.third{ animation-delay: 1.5s; }
 			}
 
 			&.dancingpoint-alicesprings{
 				top: 134px;
 				left: 437px;
 
-				.first{
-					animation-delay: .3s;
-				}
-
-				.second{
-					animation-delay: .8s;
-				}
-
-				.third{
-					animation-delay: 1.3s;
-				}
+				.first{ animation-delay: .3s; }
+				.second{ animation-delay: .8s; }
+				.third{ animation-delay: 1.3s; }
 			}
 		}
 	}
