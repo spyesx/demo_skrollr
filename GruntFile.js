@@ -29,7 +29,7 @@ module.exports = function(grunt)
 
 		watch: {
 			app_sass: {
-				files: ['scss/**/*.scss'],
+				files: ['scss/**/*.scss','scss/**/*.sass'],
 				tasks: ['clean:app_css','compass:app_sass', 'autoprefixer:app_css'],
 			}
 		}
