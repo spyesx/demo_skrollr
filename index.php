@@ -25,6 +25,7 @@
         <ul class="tests">
             <li class="test"><a href="demo_example.php">Demo Example</a></li>
             <li class="test"><a href="card_effect.php">Card Effect</a></li>
+            <li class="test"><a href="dancing_point.php">Dancing Point</a></li>
         </ul>
     </body>
 </html>
