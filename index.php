@@ -14,14 +14,16 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/scaffolding.css">
+        <link rel="stylesheet" href="css/home.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body class="index">
         <h1>R&amp;D Skrollr</h1>
         <ul class="tests">
-            <li class="test"><a href="test1.php">Test 1</a></li>
+            <li class="test"><a href="demo_exemple.php">Demo Exemple</a></li>
             <li class="test"><a href="card_effect.php">Card Effect</a></li>
         </ul>
     </body>

@@ -19,3 +19,7 @@ grunt watch #to work
 3. Add a link in ``index.php``
 4. In a terminal : ``grunt watch`
 5. Ready to start
+
+## Demo
+
+[Visit this page for a demo](http://client.weinto.com/demo_skrollr/)

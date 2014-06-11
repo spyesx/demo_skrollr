@@ -5,7 +5,7 @@
 ?>
 
 <header class="title">
-	<h1><a href="index.php"><span>➜</span> back</a> Card effect</h1>
+	<h1>Card effect<a href="index.php"><span>➜</span> back</a></h1>
 </header>
 
 <?php
@@ -35,6 +35,8 @@
 <div id="skrollr-body">
 
 	<div id="container">
+
+		<div id="help">Scroll down to start and keep scrolling<br />↓</div>
 
 		<div id="frame"
 			data-start="top:2000px;" 
