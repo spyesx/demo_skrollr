@@ -75,6 +75,19 @@ $pointColor: #DA0101;
 				position:absolute;
 				top:0;
 				left:0;
+				transform:scale(.3);
+
+				&.first{
+					background:#F0A8A8;
+				}
+
+				&.second{
+					background:#AD5E5E;
+				}
+
+				&.third{
+					background:#B10606;
+				}
 			}
 
 			&.dancingpoint-animate{
@@ -85,7 +98,6 @@ $pointColor: #DA0101;
 					animation-iteration-count: infinite;
 					animation-direction: alternate;
 					animation-play-state: running;
-					background:#F0A8A8;
 				}
 
 				.second{
@@ -95,7 +107,6 @@ $pointColor: #DA0101;
 					animation-iteration-count: infinite;
 					animation-direction: alternate;
 					animation-play-state: running;
-					background:#AD5E5E;
 				}
 
 				.third{
@@ -105,7 +116,6 @@ $pointColor: #DA0101;
 					animation-iteration-count: infinite;
 					animation-direction: alternate;
 					animation-play-state: running;
-					background:#B10606;
 				}
 			}
 
