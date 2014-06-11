@@ -26,6 +26,7 @@
             <li class="test"><a href="demo_example.php">Demo Example</a></li>
             <li class="test"><a href="card_effect.php">Card Effect</a></li>
             <li class="test"><a href="dancing_point.php">Dancing Point</a></li>
+            <li class="test"><a href="standard_period.php">Standard Period</a></li>
         </ul>
     </body>
 </html>
