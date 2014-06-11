@@ -27,6 +27,7 @@
             <li class="test"><a href="card_effect.php">Card Effect</a></li>
             <li class="test"><a href="dancing_point.php">Dancing Point</a></li>
             <li class="test"><a href="standard_period.php">Standard Period</a></li>
+            <li class="test"><a href="xyz_movements.php">XYZ Movements</a></li>
         </ul>
     </body>
 </html>
