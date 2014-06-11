@@ -1,7 +1,5 @@
 <?php
 	$scripts = array(
-		'js/vendor/greensock/TimelineMax.min.js',
-		'js/vendor/greensock/plugins/CSSPlugin.min.js',
 		'js/app/dancing_point.js'
 	);
 	$styles = array('dancing_point.css');
