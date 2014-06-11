@@ -45,6 +45,7 @@ module.exports = function(grunt)
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	grunt.registerTask('init', ['clean:app_css','compass:app_sass', 'autoprefixer:app_css']);
 
