@@ -126,7 +126,8 @@ header.title > h1 > a{
     font-size:13px;
     font-weight:normal;
     text-decoration:none;
-    color:blue;
+    color:pink;
+    display: block;
 }
 header.title > h1 > a > span{
     -webkit-transform:rotate(-180deg);

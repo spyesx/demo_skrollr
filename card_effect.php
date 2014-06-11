@@ -5,7 +5,7 @@
 ?>
 
 <header class="title">
-	<h1><a href="index.php"><span>➜</span> back</a> Card effect</h1>
+	<h1>Card effect<a href="index.php"><span>➜</span> back</a></h1>
 </header>
 
 <?php

@@ -12,6 +12,15 @@ $frameH : 400;
 	height:20000px;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+  
+  &.visited {
+    color: white;
+  }
+}
+
 #container{
 	position: relative;
 }
@@ -19,7 +28,8 @@ $frameH : 400;
 #frame{
 	width:$frameW+px;
 	height:$frameH+px;
-	background:#F1F1F1;
+  background:#F1F1F1;
+  box-shadow: 0 5px 1px rgba(0,0,0,.1);
 	position:absolute;
 	left:50%;
 	top:50px;
@@ -40,6 +50,55 @@ $frameH : 400;
 			position:absolute;
 			top:0;
 			left:0;
+      box-shadow: 0 5px 1px rgba(0,0,0,.1);
+      overflow: hidden;
+
+      &:after,
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid rgba(0,0,0,.2);
+        box-sizing: border-box;
+      }
+      
+      &:after {
+        $thisW : 200;
+        $thisH : 200;
+        width: $thisW+px;
+        height: $thisH+px;
+        margin-top: -$thisH/2+px;
+        margin-left: -$thisW/2+px;
+        transform: rotate(-45deg);
+      }
+      
+      &:before {
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px;
+        border-radius: 100%;
+      }
+      
+      &:nth-of-type(3n+1) {
+        &:before {
+          content: "";
+        }
+      }
+      
+      &:nth-of-type(3n+2) {
+        &:after {
+          content: "";
+        }
+      }
+      
+      &:nth-of-type(3n+3) {
+        &:before,
+        &:after {
+          content: "";
+        }
+      }
+      
+      
 
 			&.slide-1{background:rgba(204, 107, 50, 1); z-index:15;}
 			&.slide-2{background:rgba(255, 171, 72, 1); z-index:14;}
@@ -64,7 +123,8 @@ $frameH : 400;
 .diamond{
 	background:rgba(193, 0, 40, 1);
 	transform: rotate(-45deg);
-
+  box-shadow: -30px 30px 2px rgba(0,0,0,.1);
+  
 	overflow:hidden;
 	position:relative;
 	margin:5px auto; /*TODO:remove*/
@@ -76,6 +136,8 @@ $frameH : 400;
 		display:table-cell;
 		vertical-align:middle;
 		font-family: "didot_lightregular";
+    font-size: 12px;
+    text-transform: uppercase;
 		letter-spacing:1px;
 		left: 0;
 		position: absolute;
