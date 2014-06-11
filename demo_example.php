@@ -5,7 +5,7 @@
 ?>
 
 <header class="title">
-	<h1><a href="index.php"><span>➜</span> back</a> Demo Exemple</h1>
+	<h1><a href="index.php"><span>➜</span> back</a> Demo Example</h1>
 </header>
 
 

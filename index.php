@@ -20,7 +20,7 @@
     <body>
         <h1>R&amp;D Skrollr</h1>
         <ul>
-            <li><a href="demo_exemple.php">Demo Exemple</a></li>
+            <li><a href="demo_example.php">Demo Example</a></li>
             <li><a href="card_effect.php">Card Effect</a></li>
         </ul>
     </body>
