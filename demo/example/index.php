@@ -23,7 +23,11 @@
 	        data-5000-start="top:4900px;transform:rotate(360deg);" 
 	        data-6000-start="top:4600px" 
 	        data-anchor-target="#container"
-			>DEMO GOES HERE</div>
+			>
+			<div>
+				DEMO GOES HERE
+			</div>
+		</div>
 
 	</div>
 </div>
