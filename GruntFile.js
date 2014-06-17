@@ -9,6 +9,7 @@ module.exports = function(grunt)
 	};
 
 	var demos = [
+        'test',
 		'card_effect',
 		'dancing_point',
 		'example',
