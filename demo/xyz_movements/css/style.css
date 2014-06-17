@@ -1,0 +1,79 @@
+/* line 1, ../../scss/app/xyz_movements.scss */
+#skrollr-body {
+  position: relative;
+  height: 20000px;
+}
+
+/* line 7, ../../scss/app/xyz_movements.scss */
+#container {
+  position: relative;
+}
+
+/* line 11, ../../scss/app/xyz_movements.scss */
+#text, #surprise, #illu1, #illu2, #date {
+  position: absolute;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+/* line 18, ../../scss/app/xyz_movements.scss */
+#text {
+  background: #cc6b32;
+  z-index: 15;
+  width: 380px;
+  height: 500px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  padding: 50px;
+  left: 200px;
+  top: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 30, ../../scss/app/xyz_movements.scss */
+#text > div {
+  display: none;
+  opacity: 0;
+}
+
+/* line 36, ../../scss/app/xyz_movements.scss */
+#surprise {
+  background: #ffab48;
+  z-index: 15;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 200px;
+  height: 400px;
+  top: 180px;
+  left: 200px;
+}
+
+/* line 46, ../../scss/app/xyz_movements.scss */
+#illu1 {
+  background: #ffe7ad;
+  z-index: 15;
+  width: 300px;
+  height: 500px;
+  top: 100px;
+  left: 40%;
+}
+
+/* line 55, ../../scss/app/xyz_movements.scss */
+#illu2 {
+  background: #a7c9ae;
+  z-index: 15;
+  width: 200px;
+  height: 300px;
+  top: 200px;
+  left: 43%;
+}
+
+/* line 64, ../../scss/app/xyz_movements.scss */
+#date {
+  background: rgba(193, 0, 40, 0.6);
+  z-index: 15;
+  right: 100px;
+  font-family: Georgia, serif;
+  font-size: 160px;
+  top: 400px;
+}

@@ -1,0 +1,262 @@
+@-webkit-keyframes dancingpoint {
+  /* line 8, ../../scss/style.scss */
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+
+  /* line 13, ../../scss/style.scss */
+  16% {
+    -webkit-transform: scale(0.33);
+            transform: scale(0.33);
+    opacity: .33;
+  }
+
+  /* line 18, ../../scss/style.scss */
+  32% {
+    -webkit-transform: scale(0.66);
+            transform: scale(0.66);
+    opacity: .66;
+  }
+
+  /* line 23, ../../scss/style.scss */
+  48% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 28, ../../scss/style.scss */
+  64% {
+    -webkit-transform: scale(0.66);
+            transform: scale(0.66);
+    opacity: .66;
+  }
+
+  /* line 33, ../../scss/style.scss */
+  80% {
+    -webkit-transform: scale(0.33);
+            transform: scale(0.33);
+    opacity: .33;
+  }
+
+  /* line 38, ../../scss/style.scss */
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes dancingpoint {
+  /* line 8, ../../scss/style.scss */
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+
+  /* line 13, ../../scss/style.scss */
+  16% {
+    -webkit-transform: scale(0.33);
+            transform: scale(0.33);
+    opacity: .33;
+  }
+
+  /* line 18, ../../scss/style.scss */
+  32% {
+    -webkit-transform: scale(0.66);
+            transform: scale(0.66);
+    opacity: .66;
+  }
+
+  /* line 23, ../../scss/style.scss */
+  48% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 28, ../../scss/style.scss */
+  64% {
+    -webkit-transform: scale(0.66);
+            transform: scale(0.66);
+    opacity: .66;
+  }
+
+  /* line 33, ../../scss/style.scss */
+  80% {
+    -webkit-transform: scale(0.33);
+            transform: scale(0.33);
+    opacity: .33;
+  }
+
+  /* line 38, ../../scss/style.scss */
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* line 44, ../../scss/style.scss */
+#skrollr-body {
+  position: relative;
+  height: 20000px;
+}
+
+/* line 49, ../../scss/style.scss */
+#container {
+  position: relative;
+}
+/* line 52, ../../scss/style.scss */
+#container #map {
+  background: url(../../img/australia.svg) center no-repeat;
+  width: 900px;
+  height: 400px;
+  background-size: contain;
+  position: absolute;
+  top: 1400px;
+  left: 50%;
+  margin-left: -450px;
+}
+/* line 62, ../../scss/style.scss */
+#container #map .dancingpoint {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 33px;
+  overflow: hidden;
+}
+/* line 69, ../../scss/style.scss */
+#container #map .dancingpoint > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 33px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+}
+/* line 80, ../../scss/style.scss */
+#container #map .dancingpoint > div.first {
+  background: #F0A8A8;
+}
+/* line 84, ../../scss/style.scss */
+#container #map .dancingpoint > div.second {
+  background: #AD5E5E;
+}
+/* line 88, ../../scss/style.scss */
+#container #map .dancingpoint > div.third {
+  background: #B10606;
+}
+/* line 94, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-animate .first {
+  -webkit-animation-name: dancingpoint;
+          animation-name: dancingpoint;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+/* line 103, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-animate .second {
+  -webkit-animation-name: dancingpoint;
+          animation-name: dancingpoint;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+/* line 112, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-animate .third {
+  -webkit-animation-name: dancingpoint;
+          animation-name: dancingpoint;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+/* line 122, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-sydney {
+  top: 275px;
+  left: 594px;
+}
+/* line 126, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-sydney .first {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+/* line 127, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-sydney .second {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+/* line 128, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-sydney .third {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+/* line 131, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-melbourne {
+  top: 314px;
+  left: 537px;
+}
+/* line 135, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-melbourne .first {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+/* line 136, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-melbourne .second {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+/* line 137, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-melbourne .third {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+/* line 140, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-alicesprings {
+  top: 134px;
+  left: 437px;
+}
+/* line 144, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-alicesprings .first {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+/* line 145, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-alicesprings .second {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+/* line 146, ../../scss/style.scss */
+#container #map .dancingpoint.dancingpoint-alicesprings .third {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}

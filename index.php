@@ -12,23 +12,28 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/scaffolding.css">
-        <link rel="stylesheet" href="css/home.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/scaffolding.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body class="index">
         <h1>R&amp;D Skrollr</h1>
         <ul class="tests">
-            <li class="test"><a href="demo_example.php">Demo Example</a></li>
-            <li class="test"><a href="card_effect.php">Card Effect</a></li>
-            <li class="test"><a href="dancing_point.php">Dancing Point</a></li>
-            <li class="test"><a href="standard_period.php">Standard Period</a></li>
-            <li class="test"><a href="xyz_movements.php">XYZ Movements</a></li>
-            <li class="test"><a href="mask_animation.php">Mask Animation</a></li>
+        <?php
+            foreach(array_diff(scandir('demo/', 1), array('..', '.', '.DS_Store')) as $file)
+            {
+                if(file_exists('demo/'.$file.'/index.php')){
+                    echo '<li class="test"><a href="demo/'.$file.'/index.php">'.str_replace('_', ' ', $file).'</a></li>'."\n\t";
+                }
+            }
+        ?>
         </ul>
     </body>
 </html>
+
+
+

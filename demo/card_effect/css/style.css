@@ -1,0 +1,217 @@
+/* line 10, ../../scss/app/card_effect.scss */
+#skrollr-body {
+  position: relative;
+  height: 20000px;
+}
+
+/* line 15, ../../scss/app/card_effect.scss */
+a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 19, ../../scss/app/card_effect.scss */
+a.visited {
+  color: white;
+}
+
+/* line 24, ../../scss/app/card_effect.scss */
+#container {
+  position: relative;
+}
+
+/* line 28, ../../scss/app/card_effect.scss */
+#frame {
+  width: 300px;
+  height: 400px;
+  background: #F1F1F1;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin-left: -150px;
+  overflow: hidden;
+}
+/* line 39, ../../scss/app/card_effect.scss */
+#frame > #frame-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 400px;
+}
+/* line 46, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide {
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+/* line 57, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide:after, #frame > #frame-slider > .slide:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+/* line 65, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide:after {
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/* line 75, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide:before {
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  border-radius: 100%;
+}
+/* line 83, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide:nth-of-type(3n+1):before {
+  content: "";
+}
+/* line 89, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide:nth-of-type(3n+2):after {
+  content: "";
+}
+/* line 96, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide:nth-of-type(3n+3):before, #frame > #frame-slider > .slide:nth-of-type(3n+3):after {
+  content: "";
+}
+/* line 101, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide.slide-1 {
+  background: #cc6b32;
+  z-index: 15;
+}
+/* line 102, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide.slide-2 {
+  background: #ffab48;
+  z-index: 14;
+}
+/* line 103, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide.slide-3 {
+  background: #ffe7ad;
+  z-index: 13;
+}
+/* line 104, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide.slide-4 {
+  background: #a7c9ae;
+  z-index: 12;
+}
+/* line 105, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide.slide-5 {
+  background: #888a63;
+  z-index: 11;
+}
+/* line 106, ../../scss/app/card_effect.scss */
+#frame > #frame-slider > .slide.slide-6 {
+  background: rgba(193, 0, 40, 0.6);
+  z-index: 10;
+}
+
+/* line 111, ../../scss/app/card_effect.scss */
+#caption {
+  position: absolute;
+  left: 50%;
+  margin-left: 120px;
+  z-index: 20;
+}
+
+/* line 121, ../../scss/app/card_effect.scss */
+.diamond {
+  background: #c10028;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  box-shadow: -30px 30px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 5px auto;
+  /*TODO:remove*/
+}
+/* line 130, ../../scss/app/card_effect.scss */
+.diamond > div {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "didot_lightregular";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  left: 0;
+  position: absolute;
+}
+/* line 143, ../../scss/app/card_effect.scss */
+.diamond > div > ul, .diamond > div > ul > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 153, ../../scss/app/card_effect.scss */
+.diamond > div > ul > li {
+  opacity: 0;
+}
+/* line 156, ../../scss/app/card_effect.scss */
+.diamond > div > ul > li > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 163, ../../scss/app/card_effect.scss */
+.diamond.diamond-red {
+  background: #c10028;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+}
+/* line 169, ../../scss/app/card_effect.scss */
+.diamond.diamond-red > div {
+  height: 100px;
+  width: 100px;
+  font-size: 12px;
+}
+/* line 174, ../../scss/app/card_effect.scss */
+.diamond.diamond-red > div > ul, .diamond.diamond-red > div > ul > li {
+  height: 100px;
+  width: 100px;
+}
+/* line 178, ../../scss/app/card_effect.scss */
+.diamond.diamond-red > div > ul > li > span {
+  height: 100px;
+  width: 100px;
+}
+/* line 185, ../../scss/app/card_effect.scss */
+.diamond.diamond-white {
+  background: white;
+  height: 200px;
+  width: 200px;
+  color: #c10028;
+  text-transform: uppercase;
+}
+/* line 192, ../../scss/app/card_effect.scss */
+.diamond.diamond-white > div {
+  height: 200px;
+  width: 200px;
+}
+/* line 195, ../../scss/app/card_effect.scss */
+.diamond.diamond-white > div > ul, .diamond.diamond-white > div > ul > li {
+  height: 200px;
+  width: 200px;
+}
+/* line 199, ../../scss/app/card_effect.scss */
+.diamond.diamond-white > div > ul > li > span {
+  height: 200px;
+  width: 200px;
+}
