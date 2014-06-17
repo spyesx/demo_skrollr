@@ -28,6 +28,7 @@
             <li class="test"><a href="dancing_point.php">Dancing Point</a></li>
             <li class="test"><a href="standard_period.php">Standard Period</a></li>
             <li class="test"><a href="xyz_movements.php">XYZ Movements</a></li>
+            <li class="test"><a href="mask_animation.php">Mask Animation</a></li>
         </ul>
     </body>
 </html>
