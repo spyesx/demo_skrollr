@@ -19,13 +19,13 @@
 }
 
 .mask{
-	-webkit-mask: url(../img/square.svg), url(../img/square.svg);
+	-webkit-mask: url(../../img/square.svg), url(../../img/square.svg);
 	-webkit-mask-repeat: no-repeat, no-repeat;
 	-webkit-mask-position-x: 200px, 0px;
 	-webkit-mask-size: 0px 100%, 0px 100%;
 	-webkit-mask-position-y: 0, 0;
 
-	mask: url('../img/square.svg#menuMask'),  url('../img/square.svg#menuMask');
+	mask: url('../../img/square.svg#menuMask'),  url('../../img/square.svg#menuMask');
 
 }
 
