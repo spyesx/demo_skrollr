@@ -41,8 +41,9 @@
 		<div id="text"
 			data-start="top:<?php echo scrollPos(2000); ?>px;" 
 	        data-<?php echo scrollPos(690); ?>-start="top:<?php echo scrollPos(900); ?>px" 
-	        data-<?php echo scrollPos(2000); ?>-start="width:380px; height:500px; top:<?php echo scrollPos(2210); ?>" 
-	        data-<?php echo scrollPos(5000); ?>-start="width:400px; height:300px; top:<?php echo scrollPos(4210); ?>" 
+	        data-<?php echo scrollPos(2000); ?>-start="width:380px; height:500px; top:<?php echo scrollPos(2210); ?>px" 
+	        data-<?php echo scrollPos(5000); ?>-start="width:380px; height:500px; top:<?php echo scrollPos(4210); ?>px" 
+	        data-<?php echo scrollPos(5500); ?>-start="width:400px; height:300px; top:<?php echo scrollPos(4710); ?>px" 
 	        data-<?php echo scrollPos(7000); ?>-start="top:<?php echo scrollPos(7210); ?>px" 
 			>
 			<div class="first">
