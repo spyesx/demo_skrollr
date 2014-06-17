@@ -1,8 +1,10 @@
 $(document).ready(function()
 {
 
-	var $menu = $('#menu');
-	var $btn  = $('#btn-animate').data('order', 'open');
+	var $menu    = $('#menu');
+	var $btn     = $('#btn-animate').data('order', 'open');
+	var $content = $('#content');
+	var $viewportBorders = $('#viewport-borders');
 
 	var tl = new TimelineMax();
 	var maskPos = {
@@ -34,8 +36,8 @@ $(document).ready(function()
 		onReverseComplete: function()
 		{
 			$menu[0].style.display = 'none';
-		}
-
+		},
+		delay:1
 	});
 
 
@@ -56,11 +58,15 @@ $(document).ready(function()
 		{
 			t.data('order', 'close');
 			tl.play();
+			$content.toggleClass('zoomOut');
+			$viewportBorders.toggleClass('show');
 		}
 		else
 		{
 			t.data('order', 'open');
 			tl.reverse();
+			$content.toggleClass('zoomOut');
+			$viewportBorders.toggleClass('show');
 		}
 	});
 

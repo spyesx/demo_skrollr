@@ -4,7 +4,7 @@
 
 #btn-animate{
 	position:fixed;
-	top:200px;
+	top:220px;
 	left:100px;
 	border:none;
 	background:rgba(204, 107, 50, 1);
@@ -35,7 +35,7 @@
 	height:100%;
 	top:0;
 	left:50%;
-	margin-left:-250px;
+	margin-left:-200px;
 	background:rgba(136, 138, 99, 1);
 	display:none;
 
@@ -74,8 +74,44 @@
 	}
 }
 
-#maskSrc{
-	position:absolute;
-	top:400px;
-	left:50px;
+
+#content{
+	background:rgba(167, 201, 174, 1);
+	width:100%;
+	transition: all 1s;
+	transform: scale(1);
+	transform-origin:50% 10%;
+	box-sizing: border-box;
+	padding:200px;
+
+	&.zoomOut{
+		transform: scale(.8);
+	}
 }
+
+#viewport-borders{
+	position:fixed;
+	border:0px #000 solid;
+	width:100%;
+	height:100%;
+	transition: all .7s;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+
+	&.show{
+		border-width:60px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
