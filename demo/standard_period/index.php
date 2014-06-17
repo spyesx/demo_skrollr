@@ -6,7 +6,7 @@
 ?>
 
 <header class="title">
-	<h1>Standard Period<a href="index.php"><span>➜</span> back</a></h1>
+	<h1>Standard Period<a href="../../index.php"><span>➜</span> back</a></h1>
 </header>
 
 

@@ -5,7 +5,7 @@ $(document).ready(function()
 	var $btn     = $('#btn-animate').data('order', 'open');
 	var $content = $('#content');
 	var $viewportBorders = $('#viewport-borders');
-
+/*
 	var tl = new TimelineMax();
 	var maskPos = {
 		xFirst  : 201, //200
@@ -47,32 +47,34 @@ $(document).ready(function()
 
 
 
-
+*/
 
 
 
 	$btn.on('click', function(e)
 	{
 		var t = $(this);
-		console.log(t.data('order'));
 
 		if(t.data('order') == 'open')
 		{
 			t.data('order', 'close');
-			tl.play();
+			//tl.play();
+			$menu.toggleClass('open');
 			$content.toggleClass('zoomOut');
 			$viewportBorders.toggleClass('show');
 		}
 		else
 		{
 			t.data('order', 'open');
-			tl.reverse();
+			//tl.reverse();
+			$menu.toggleClass('open');
 			$content.toggleClass('zoomOut');
 			$viewportBorders.toggleClass('show');
 		}
 	});
 
 });
+
 
 
 

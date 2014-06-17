@@ -1,3 +1,4 @@
 .sass-cache/
 node_modules/
 demo/*/css/compiled
+dploy.yaml
