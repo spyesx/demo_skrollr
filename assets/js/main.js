@@ -1,6 +1,8 @@
 var s = skrollr.init(
 {
-	smoothScrolling: false,
+	smoothScrolling: true,
+    smoothScrollingDuration: 200,
+    
 	render: function(data)
 	{
 	  $('#dashboard-skrollr-x').text(data.curTop);
