@@ -5,7 +5,6 @@ var s = skrollr.init(
     
 	render: function(data)
 	{
-	  $('#dashboard-skrollr-x').text(data.curTop);
 	  document.getElementById('dashboard-skrollr-x').innerHTML = data.curTop;
 	},
 	beforerender: function(data) {
