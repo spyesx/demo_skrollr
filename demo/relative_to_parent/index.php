@@ -6,7 +6,7 @@
 ?>
 
 <header class="title">
-	<h1>Demo Example<a href="../../index.php"><span>➜</span> back</a></h1>
+	<h1>Relative to parent<a href="../../index.php"><span>➜</span> back</a></h1>
 </header>
 
 <div class="test-area">
@@ -24,15 +24,21 @@
 </div>
 
 <div id="skrollr-body">
+    <?php include('../../assets/cross-fixed.svg');?>
 
 	<div id="container">
 
 		<div id="help">Scroll down to start and keep scrolling<br />↓</div>
         
-        <ul id="items-1">
+        <ul id="trigger-items">
+            
+        </ul>
+        
+        <ul id="items-1" class="items">
+            <?php include('../../assets/cross.svg');?>
             <li id="item1" class="item"
                 data-anchor-target="#items-1"
-                data-start="bottom:-100%"
+                data-top="bottom:-100%"
                 data-center="bottom:50%"
                 data-bottom="bottom:100%"
             >
@@ -42,7 +48,7 @@
             </li>
             <li id="item2" class="item"
                 data-anchor-target="#items-1"
-                data-start="bottom:-100%"
+                data-top="bottom:-100%"
                 data-center="bottom:40%"
                 data-bottom="bottom:100%"
             >
@@ -52,7 +58,7 @@
             </li>
             <li id="item3" class="item"
                 data-anchor-target="#items-1"
-                data-start="bottom:-100%"
+                data-top="bottom:-100%"
                 data-center="bottom:20%"
                 data-bottom="bottom:100%"
             >
@@ -62,7 +68,7 @@
             </li>
             <li id="item4" class="item"
                 data-anchor-target="#items-1"
-                data-start="bottom:-100%"
+                data-top="bottom:-100%"
                 data-center="bottom:40%"
                 data-bottom="bottom:100%"
             >
@@ -72,7 +78,7 @@
             </li>
             <li id="item5" class="item"
                 data-anchor-target="#items-1"
-                data-start="bottom:-100%"
+                data-top="bottom:-100%"
                 data-center="bottom:50%"
                 data-bottom="bottom:100%"
             >
@@ -82,7 +88,8 @@
             </li>
         </ul>
         
-        <ul id="items-2">
+        <ul id="items-2" class="items">
+            <?php include('../../assets/cross.svg');?>
             <li id="item1" class="item"
                 data-anchor-target="#items-2"
                 data-start="bottom:-100%"

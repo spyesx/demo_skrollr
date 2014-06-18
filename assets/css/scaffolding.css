@@ -30,3 +30,12 @@ li.test a {
   padding-bottom: 4px;
   border-bottom: 1px solid pink;
 }
+
+#skrollr-body > svg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+}
