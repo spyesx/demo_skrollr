@@ -1,0 +1,60 @@
+#menu{
+	box-sizing:border-box;
+	padding:20px;
+	background:#fff;
+	position:fixed;
+	left:20px;
+	top:200px;
+	z-index:200;
+
+	ul, ul>li{
+		padding:0;
+		margin:0;
+		list-style:none;
+	}
+
+	a{
+		text-decoration:none;
+		color:#464646;
+	}
+}
+
+
+#skrollr-body{
+	position:relative;
+	height:20000px;
+}
+
+#container{
+	position: relative;
+}
+
+.period{
+	width:50%;
+	margin:0 auto;
+	box-sizing:border-box;
+	padding:100px;
+}
+
+
+#p1{
+	background:#FF5335;
+}
+#p2{
+	background:#B39C85;
+}
+#p3{
+	background:#306E73;
+}
+#p4{
+	background:#3B424D;
+}
+#p4{
+	background:#1D181F;
+}
+#p5{
+	background:#FF5335;
+}
+#p6{
+	background:#B39C85;
+}
