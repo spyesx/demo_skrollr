@@ -40,7 +40,7 @@
                 data-anchor-target="#items-1"
                 data-top="bottom:-100%"
                 data-center="bottom:50%"
-                data-bottom="bottom:100%"
+                data-bottom="bottom:70%"
             >
                 <div>
                     <span>1</span>
@@ -50,7 +50,7 @@
                 data-anchor-target="#items-1"
                 data-top="bottom:-100%"
                 data-center="bottom:40%"
-                data-bottom="bottom:100%"
+                data-bottom="bottom:70%"
             >
                 <div>
                     <span>2</span>
@@ -60,7 +60,7 @@
                 data-anchor-target="#items-1"
                 data-top="bottom:-100%"
                 data-center="bottom:20%"
-                data-bottom="bottom:100%"
+                data-bottom="bottom:70%"
             >
                 <div>
                     <span>3</span>
@@ -70,7 +70,9 @@
                 data-anchor-target="#items-1"
                 data-top="bottom:-100%"
                 data-center="bottom:40%"
-                data-bottom="bottom:100%"
+                data-bottom="bottom:25%"
+                data-center-bottom="bottom:10%"
+                data-top-bottom="bottom:100%"
             >
                 <div>
                     <span>4</span>
@@ -80,7 +82,9 @@
                 data-anchor-target="#items-1"
                 data-top="bottom:-100%"
                 data-center="bottom:50%"
-                data-bottom="bottom:100%"
+                data-bottom="bottom:10%"
+                data-center-bottom="bottom:0%"
+                data-top-bottom="bottom:100%"
             >
                 <div>
                     <span>5</span>
@@ -89,6 +93,60 @@
         </ul>
         
         <ul id="items-2" class="items">
+            <?php include('../../assets/cross.svg');?>
+            <li id="item1" class="item"
+                data-anchor-target="#items-2"
+                data-start="bottom:-100%"
+                data-center="bottom:50%"
+                data-bottom="bottom:100%"
+            >
+                <div>
+                    <span>1</span>
+                </div>
+            </li>
+            <li id="item2" class="item"
+                data-anchor-target="#items-2"
+                data-start="bottom:-100%"
+                data-center="bottom:40%"
+                data-bottom="bottom:100%"
+            >
+                <div>
+                    <span>2</span>
+                </div>
+            </li>
+            <li id="item3" class="item"
+                data-anchor-target="#items-2"
+                data-start="bottom:-100%"
+                data-center="bottom:20%"
+                data-bottom="bottom:100%"
+            >
+                <div>
+                    <span>3</span>
+                </div>
+            </li>
+            <li id="item4" class="item"
+                data-anchor-target="#items-2"
+                data-start="bottom:-100%"
+                data-center="bottom:40%"
+                data-bottom="bottom:100%"
+            >
+                <div>
+                    <span>4</span>
+                </div>
+            </li>
+            <li id="item5" class="item"
+                data-anchor-target="#items-2"
+                data-start="bottom:-100%"
+                data-center="bottom:50%"
+                data-bottom="bottom:100%"
+            >
+                <div>
+                    <span>5</span>
+                </div>
+            </li>
+        </ul>
+        
+        <ul id="items-3" class="items">
             <?php include('../../assets/cross.svg');?>
             <li id="item1" class="item"
                 data-anchor-target="#items-2"
