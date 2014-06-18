@@ -16,7 +16,8 @@ module.exports = function(grunt)
 		'mask_animation',
 		'standard_period',
 		'xyz_movements',
-		'scale_animation'
+		'scale_animation',
+		'skrollr_menu'
 	];
 
 	var grunt_task_init ={
