@@ -9,7 +9,7 @@ module.exports = function(grunt)
 	};
 
 	var demos = [
-        'newtest',
+        'period_title',
         'relative_to_parent',
 		'card_effect',
 		'dancing_point',
