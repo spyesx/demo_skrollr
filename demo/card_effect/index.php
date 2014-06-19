@@ -26,7 +26,7 @@
 
 		return $r;
 	}
-	$pos                = slidesPositions(7, 1800, 2000, 800);
+	$pos                = slidesPositions(7, 0, 1000, 800);
 	$framePosFrom       = 800;
 	$framePosTo         = $pos['slide-6']['transition'];
 	$framePosTransition = $framePosTo + 600;
@@ -40,10 +40,9 @@
 		<div id="help">Scroll down to start and keep scrolling<br />↓</div>
 
 		<div id="frame"
-			data-start="top:2000px;" 
-	        data-<?php echo $framePosFrom; ?>-start="top:900px" 
-	        data-<?php echo $framePosTo; ?>-start="top:<?php echo $framePosTo + 100; ?>px" 
-	        data-<?php echo $framePosTransition; ?>-start="top:<?php echo $framePosTo - 200; ?>px"
+			data-start="top:900px;" 
+	        data-<?php echo $framePosFrom; ?>-start="top:300px" 
+	        data-anchor-target="#container"
 			>
 			<div id="frame-slider">
 				<div class="slide slide-1"
@@ -82,9 +81,9 @@
 
 		<div id="caption" class="diamond diamond-red"
 			data-start="top:2000px;" 
-	        data-<?php echo $framePosFrom+300; ?>-start="top:1500px" 
-	        data-<?php echo $framePosTo; ?>-start="top:<?php echo $framePosTo + 300; ?>px" 
-	        data-<?php echo $framePosTransition; ?>-start="top:<?php echo $framePosTo - 200; ?>px"
+	        data-<?php echo $framePosFrom+300; ?>-start="top:550px" 
+	        data-<?php echo $framePosTo; ?>-start="top:400px"
+	        data-anchor-target="#container"
 			>
 			<div>
 				<ul>

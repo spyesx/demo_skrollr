@@ -28,9 +28,9 @@
 	#frame{
 		width:$frameW+px;
 		height:$frameH+px;
-	  background:#F1F1F1;
-	  box-shadow: 0 5px 1px rgba(0,0,0,.1);
-		position:absolute;
+		background:#F1F1F1;
+		box-shadow: 0 5px 1px rgba(0,0,0,.1);
+		position:fixed;
 		left:50%;
 		top:50px;
 		margin-left:-150px;
@@ -109,7 +109,7 @@
 	}
 
 	#caption{
-		position:absolute;
+		position:fixed;
 		left: 50%;
 		margin-left: 120px;
 		z-index:20;
@@ -124,7 +124,7 @@
 		box-shadow: -30px 30px 2px rgba(0,0,0,.1);
 
 		overflow:hidden;
-		position:relative;
+		position:fixed;
 		margin:5px auto; /*TODO:remove*/
 
 		> div{
@@ -137,7 +137,7 @@
 			text-transform: uppercase;
 			letter-spacing:1px;
 			left: 0;
-			position: absolute;
+			position: fixed;
 
 
 			>ul, >ul>li{
@@ -145,13 +145,14 @@
 				padding:0;
 				list-style:none;
 				display:inline-block;
-				position:absolute;
+				position:fixed;
 				left:0;
 				top:0;
 			}
 
 			> ul > li{
 				opacity:0;
+				position:fixed;
 
 				> span{
 					display:table-cell;
