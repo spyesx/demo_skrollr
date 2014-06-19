@@ -5,6 +5,7 @@
     box-sizing: border-box
 
 .period
+    position: relative
     border: 5px dotted yellow
     box-sizing: border-box
 
@@ -35,3 +36,33 @@
         font-size: 48px
         line-height: 1
         text-transform: uppercase
+        
+ul.blocks
+    position: absolute
+    top: 800px
+    left: 0
+    right: 0
+    list-style: none
+    margin: 0
+    padding: 0
+    
+    &.yellow
+        li.block
+            background: rgba(211,174,0,1)
+            
+    &.green
+        li.block
+            background: rgba(0,211,149,1)
+            
+    &.blue
+        li.block
+            background: rgba(13,75,133,1)
+    
+li.block
+    list-style: none
+    display: block
+    width: 50px
+    height: 50px
+    margin: 0 auto 400px
+    border-radius: 50px
+    box-shadow: 0 30px 2px rgba(0, 0, 0, 0.1)
