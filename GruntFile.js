@@ -18,7 +18,8 @@ module.exports = function(grunt)
 		'standard_period',
 		'xyz_movements',
 		'scale_animation',
-		'skrollr_menu'
+		'skrollr_menu',
+		'skrollr_breakpoints'
 	];
 
 	var grunt_task_init ={
