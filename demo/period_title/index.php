@@ -21,6 +21,26 @@
     >
         <h2>This is an intro</h2>
     </div>
+    
+    <ul class="blocks yellow">
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+    </ul>
+    
     <?php include('../../assets/cross.svg');?>
 </div>
 
@@ -36,6 +56,26 @@
     >
         <h2>This the second intro</h2>
     </div>
+    
+    <ul class="blocks green">
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+    </ul>
+    
     <?php include('../../assets/cross.svg');?>
 </div>
 
@@ -51,6 +91,26 @@
     >
         <h2>This is a third intro</h2>
     </div>
+    
+    <ul class="blocks blue">
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+        <li class="block"></li>
+    </ul>
+    
     <?php include('../../assets/cross.svg');?>
 </div>
 
