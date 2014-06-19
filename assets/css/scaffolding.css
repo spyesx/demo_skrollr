@@ -1,4 +1,10 @@
+html,
 body {
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
   background: rgba(10,0,30,.9);
   font-family: "gotham_mediumregular";
   color: white;
@@ -32,6 +38,15 @@ li.test a {
 }
 
 #skrollr-body > svg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+}
+
+body > svg {
     position: fixed;
     top: 0;
     right: 0;
