@@ -42,6 +42,8 @@
 		<div id="frame"
 			data-start="top:900px;" 
 	        data-<?php echo $framePosFrom; ?>-start="top:300px" 
+	        data-<?php echo $framePosTo; ?>-start="top:300px" 
+	        data-<?php echo $framePosTo+500; ?>-start="top:-500px" 
 	        data-anchor-target="#container"
 			>
 			<div id="frame-slider">
@@ -81,8 +83,9 @@
 
 		<div id="caption" class="diamond diamond-red"
 			data-start="top:2000px;" 
-	        data-<?php echo $framePosFrom+300; ?>-start="top:550px" 
-	        data-<?php echo $framePosTo; ?>-start="top:400px"
+	        data-<?php echo $framePosFrom+100; ?>-start="top:550px" 
+	        data-<?php echo $framePosTo; ?>-start="top:400px" 
+	        data-<?php echo $framePosTo+500; ?>-start="top:-500px" 
 	        data-anchor-target="#container"
 			>
 			<div>
