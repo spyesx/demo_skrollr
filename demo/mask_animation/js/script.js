@@ -56,7 +56,7 @@ $(document).ready(function()
 		var t = $(this);
 		console.log(t.data('order'));
 
-		if(t.data('order') == 'open')
+		if(t.data('order') === 'open')
 		{
 			t.data('order', 'close');
 			tl.play();

@@ -1,20 +1,20 @@
 (function(){
     updateCurtain();
-})()
+})();
 
 function updateCurtain(){
-    var $curtain = $('#curtain')
-    var $content = $('#curtain-content')
-    var $curtainWidth = $curtain.width()
-    var $contentWidth = $content.width()
-    var $leftMargin = -($contentWidth/2 - $curtainWidth/2)
-        
+    var $curtain = $('#curtain');
+    var $content = $('#curtain-content');
+    var $curtainWidth = $curtain.width();
+    var $contentWidth = $content.width();
+    var $leftMargin = -($contentWidth/2 - $curtainWidth/2);
+
     $content.css('left',$leftMargin);
 }
 
 function triggerCurtain(){
-    var $curtain = $('#curtain')
-    
+    var $curtain = $('#curtain');
+
     if ($curtain.hasClass('open')) {
         $curtain.animate({
             right: "40%",
@@ -40,10 +40,10 @@ function triggerCurtain(){
     $('#open-curtain-link').click(function(e){
         e.preventDefault();
         triggerCurtain();
-    })
+    });
 
-})(jQuery)
+})(jQuery);
 
 $(window).resize(function(){
   updateCurtain();
-})
+});

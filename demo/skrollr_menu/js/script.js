@@ -18,8 +18,8 @@
 
 		    //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
 		    //return Math.abs(currentTop - targetTop) * 100;
-		},
+		}
 
 	});
 
-})(jQuery)
+})(jQuery);

@@ -10,7 +10,7 @@ $(document).ready(function()
 	{
 		var t = $(this);
 
-		if(t.data('order') == 'open')
+		if(t.data('order') === 'open')
 		{
 			t.data('order', 'close');
 			$menu.toggleClass('open');
