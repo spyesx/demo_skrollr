@@ -5,6 +5,16 @@ module.exports = function(grunt)
 		compass      : {},
 		clean        : {},
 		autoprefixer : {},
+		jshint : {
+			options: {
+				curly: true,
+				eqeqeq: true,
+				eqnull: true,
+				globals: {
+					jQuery: true
+				}
+			}
+		},
 		watch        : {}
 	};
 
@@ -50,6 +60,8 @@ module.exports = function(grunt)
 			}
 		};
 
+		grunt_config.jshint['demo_'+demoName] = ['demo/'+demoName+'/js/**/*.js', '!demo/'+demoName+'/js/vendors/**/*.js'];
+
 		grunt_config.watch['demo_'+demoName] = {
 			files: ['demo/'+demoName+'/scss/**/*.scss','demo/'+demoName+'/scss/**/*.sass'],
 			tasks: ['clean:demo_'+demoName, 'compass:demo_'+demoName, 'autoprefixer:demo_'+demoName],
@@ -59,6 +71,7 @@ module.exports = function(grunt)
 		grunt_task_init.tasks = grunt_task_init.tasks.concat(grunt_config.watch['demo_'+demoName].tasks);
 	}
 
+
 	grunt.initConfig(grunt_config);
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -67,7 +80,9 @@ module.exports = function(grunt)
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
+	grunt.registerTask('verify', ['jshint']);
 	grunt.registerTask('init', grunt_task_init.tasks);
 
 
