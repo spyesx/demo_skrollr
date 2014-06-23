@@ -29,7 +29,8 @@ module.exports = function(grunt)
 		'xyz_movements',
 		'scale_animation',
 		'skrollr_menu',
-		'skrollr_breakpoints'
+		'skrollr_breakpoints',
+		'responsive_images'
 	];
 
 	var grunt_task_init ={
