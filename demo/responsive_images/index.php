@@ -23,10 +23,18 @@
 
 	<div id="container">
 
-		<div id="help">Scroll down to start and keep scrolling<br />↓</div>
-
+		<div id="info">
+			Breakpoint : <span class="breakpoint">default</span>
+			<br />
+			Retina : <span class="retina">n/a</span>
+		</div>
 		<img 
+			id="element"
 			src="img/tower.jpg" 
+			data-responsiveimg-toosmall="img/tower.jpg" 
+			data-responsiveimg-toosmall-x2="img/tower.jpg" 
+			data-responsiveimg-small="img/tower.jpg" 
+			data-responsiveimg-small-x2="img/tower.jpg" 
 			data-responsiveimg-large="img/tower.jpg" 
 			data-responsiveimg-large-x2="img/tower.jpg" 
 			data-responsiveimg-xlarge="img/xlarge/tower.jpg" 

@@ -18,6 +18,15 @@
 
 	App.responsiveImg.init();
 
+	var $infoBreakpoint = $('#info .breakpoint').eq(0);
+	var $infoRetina = $('#info .retina').eq(0);
+
+	wlib.events.listen('wlib/viewport/breakpoint/change', function(e, datas)
+	{
+		$infoBreakpoint.html(datas.breakpointName);
+		$infoRetina.html((window.devicePixelRatio > 1 ? 'yes' : 'no'));
+	});
+
 	var handlerResize = function()
 	{
 		App.viewport.breakpoint.identify();
