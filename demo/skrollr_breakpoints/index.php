@@ -14,10 +14,10 @@
 	include($relativePath.'php/header.php');
 ?>
 
-		<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/too-small.css" media="all and (min-width:0px) and (max-width:699px)" data-skrollr-stylesheet />
-		<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/small.css" media="all and (min-width:700px) and (max-width:799px)" data-skrollr-stylesheet />
-		<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/large.css" media="all and (min-width:800px) and (max-width:999px)" data-skrollr-stylesheet />
-		<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/x-large.css" media="all and (min-width:1000px)" data-skrollr-stylesheet />
+	<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/too-small.css" media="all and (min-width:0px) and (max-width:699px)" data-skrollr-stylesheet />
+	<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/small.css" media="all and (min-width:700px) and (max-width:799px)" data-skrollr-stylesheet />
+	<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/large.css" media="all and (min-width:800px) and (max-width:999px)" data-skrollr-stylesheet />
+	<link rel="stylesheet" type="text/css" href="css/compiled/skrollr-stylesheets/x-large.css" media="all and (min-width:1000px)" data-skrollr-stylesheet />
 
 <header class="title">
 	<h1>Skrollr Breakpoints<a href="../../index.php"><span>➜</span> back</a></h1>
