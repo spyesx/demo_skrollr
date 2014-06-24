@@ -24,7 +24,7 @@
         <h1>R&amp;D Skrollr</h1>
         <ul class="tests">
         <?php
-            foreach(array_diff(scandir('demo/', 1), array('..', '.', '.DS_Store')) as $file)
+            foreach(array_diff(scandir('demo/', 0), array('..', '.', '.DS_Store')) as $file)
             {
                 if(file_exists('demo/'.$file.'/index.php')){
                     echo '<li class="test"><a href="demo/'.$file.'/index.php">'.str_replace('_', ' ', $file).'</a></li>'."\n\t";
