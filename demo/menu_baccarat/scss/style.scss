@@ -122,20 +122,18 @@ $menuButtonMiddleBarTop : ($menuButtonSize / 2 - 1);
 #menu-wrapper{
 	width:100%;
 	height:100%;
-	background:rgba(255, 239, 221, 0.5);
+	background:rgba(0, 0, 0, 0.5);
 	position:fixed;
 	top:0;
 	display:none;
+	opacity:0;
 	z-index:310;
+	box-sizing:border-box;
+	border:0px #000 solid;
+	transition:border-size .2s;
 
-	&.show{
-
-		//display:block;
-
-		#menu{
-			transform: scaleX(1);
-		}
-
+	&.open{
+		border-width:50px;
 	}
 
 
@@ -145,8 +143,9 @@ $menuButtonMiddleBarTop : ($menuButtonSize / 2 - 1);
 		margin-left:-250px;
 		background:rgba(78, 117, 133, 1);
 		position: fixed;
+		top:0px;
 		left: 50%;
-		transform: scaleX(0.001);
+		transform: scaleX(0.0001);
 		transition:all .4s;
 
 		&.show-content{
@@ -161,7 +160,7 @@ $menuButtonMiddleBarTop : ($menuButtonSize / 2 - 1);
 				opacity:1;
 			}
 
-			.periods{
+			#menu-periods{
 				opacity:1;
 			}
 
@@ -247,7 +246,7 @@ $menuButtonMiddleBarTop : ($menuButtonSize / 2 - 1);
 			}
 		}
 
-		.periods{
+		#menu-periods{
 			height:100%;
 			background:rgba(69, 201, 255, 1);
 			overflow-y:auto;

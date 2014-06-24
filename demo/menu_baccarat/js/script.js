@@ -6,41 +6,24 @@ App.lib.menu = (function(window, document, undefined)
 	var $menuWrapper = $('#menu-wrapper');
 	var $menu        = $menuWrapper.find('#menu');
 	var $periods     = $menu.find('.periods').eq(0);
+	var $container	 = $('#container');
 
 	var tlOpen = new TimelineMax();
-
-	tlOpen.to($menuWrapper, .2,
-	{
-		display:'block',
+	tlOpen.to($menuWrapper, .3, {
 		opacity:1,
-		ease:"Power1.easeInOut",
-		delay:0
+		//className:'open',
+		onStart : function(){
+			$menuWrapper.css('display','block');
+		},
+		onReverseComplete : function()
+		{
+			$menuWrapper.css('display','none');
+		}
 	});
-
-
-	tlOpen.to($menu, 0.3,
-	{
-		scaleX:1,
-		translateX:'-50%',
-		ease:"Power1.easeInOut",
-	});
-
-	tlOpen.to($menu, 0.3,
-	{
-		className:'show-content',
-		delay:0.4
-	});
-
-
-
+	tlOpen.to($container, 0.2, { scale:0.9, delay:-0.2});
+	tlOpen.to($menu, 0.3, {scaleX:1, delay:1});
+	tlOpen.to($menu, 0.3, { className:'show-content', delay:0.4 });
 	tlOpen.pause();
-
-
-
-
-
-
-	var tlClose = new TimelineMax();
 
 	function Menu()
 	{
@@ -51,7 +34,6 @@ App.lib.menu = (function(window, document, undefined)
 
 		wlib.events.listen('app/view/menu/open', function()
 		{
-			console.log('catch event : app/view/menu/open');
 			that.open();
 		});
 		wlib.events.listen('app/view/menu/close', function()
@@ -77,18 +59,12 @@ App.lib.menu = (function(window, document, undefined)
 
 	Menu.prototype.open = function()
 	{
-		console.log('start to open');
 		tlOpen.play();
-		//this.$menuWrapper.toggleClass('show');
-		//this.$menu.toggleClass('show-content');
-
 	};
 
 	Menu.prototype.close = function()
 	{
 		tlOpen.reverse();
-		//this.$menuWrapper.toggleClass('show');
-		//this.$menu.toggleClass('show-content');
 	};
 
 

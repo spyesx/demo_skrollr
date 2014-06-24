@@ -89,7 +89,7 @@
 				</ul>
 			</div>
 
-			<div class="periods">
+			<div id="menu-periods">
 				<p>Paleo put a bird on it yr narwhal, Blue Bottle Schlitz biodiesel cred pork belly lomo Intelligentsia 8-bit.  Roof party you probably haven't heard of them dreamcatcher, polaroid quinoa 8-bit small batch direct trade  ennui.  Lo-fi organic Pinterest banjo, banh mi Echo Park meggings.  Flannel quinoa vegan actually Vice.  Typewriter cred slow-carb fanny pack.  Pug cardigan +1, yr beard viral bespoke YOLO VHS.  Viral messenger bag lo-fi, Godard kale chips distillery put a bird on it trust fund retro kitsch squid.</p>
 
 				<p>Trust fund retro ethnic kogi VHS Pitchfork.  Polaroid blog American Apparel before they sold out.  Kickstarter put a bird on it crucifix Brooklyn wayfarers XOXO, paleo small batch pug McSweeney's quinoa meggings keytar locavore beard.  Crucifix cornhole pug +1 plaid, keytar organic Schlitz try-hard banjo chia cray cardigan cred.  Brooklyn pickled forage swag, tattooed polaroid before they sold out keffiyeh authentic crucifix Helvetica food truck Marfa Neutra.  Biodiesel meggings irony fanny pack semiotics.  Banh mi gentrify irony cornhole, fingerstache Schlitz PBR&amp;B dreamcatcher ethical.</p>
