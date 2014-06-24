@@ -30,7 +30,8 @@ module.exports = function(grunt)
 		'scale_animation',
 		'skrollr_menu',
 		'skrollr_breakpoints',
-		'responsive_images'
+		'responsive_images',
+		'menu_baccarat'
 	];
 
 	var grunt_task_init ={
