@@ -1,0 +1,30 @@
+$height : 800;
+
+#skrollr-body{
+	position:relative;
+	height:20000px;
+}
+
+#container{
+	position: relative;
+
+	.period{
+		width:100%;
+		height:$height+px;
+		position:fixed;
+	}
+}
+
+
+#period_1{
+	background: #FF5335;
+}
+
+
+#period_2{
+	top: $height+px;
+	background: #B39C85;
+	-webkit-mask-image: url(../../img/mask.svg);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: 100% 200%;
+}

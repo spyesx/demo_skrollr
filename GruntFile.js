@@ -32,7 +32,8 @@ module.exports = function(grunt)
 		'skrollr_breakpoints',
 		'responsive_images',
 		'menu_baccarat',
-		'detect_period'
+		'detect_period',
+		'period_transition'
 	];
 
 	var grunt_task_init ={
