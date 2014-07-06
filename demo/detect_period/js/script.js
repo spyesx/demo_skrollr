@@ -16,37 +16,28 @@
 		forceHeight:true,
 		keyframe: function(element, name, direction)
 		{
-			var p = element.getAttribute('data-periodid');
-
-			wlib.console.log('period:', p, ' - name:', name, ' - direction:', direction);
-			
+			var period = parseInt(element.getAttribute('data-periodid'));
+			l.setAttribute('href', '#p'+period);
 			if(name === 'dataBottomTop' && direction === 'down')
 			{
-				var period = element.getAttribute('data-periodid');
-				l.setAttribute('href', '#p'+period);
 				l.innerHTML = 'Current '+period;
 			}
 			if(name === 'dataTopBottom' && direction === 'up')
 			{
-				var period = element.getAttribute('data-periodid');
-				l.setAttribute('href', '#p'+period);
 				l.innerHTML = 'Current '+period;
 			}
 
 			if(name === 'dataBottomTop' && direction === 'up')
 			{
-				var period = parseInt(element.getAttribute('data-periodid')) - 1;
-				l.setAttribute('href', '#p'+period);
+				period = period - 1;
 				l.innerHTML = 'Current '+period;
 			}
 			if(name === 'dataTopBottom' && direction === 'down')
 			{
-				var period = parseInt(element.getAttribute('data-periodid')) + 1;
-				l.setAttribute('href', '#p'+period);
+				period = period + 1;
 				l.innerHTML = 'Current '+period;
 			}
-
-
+			console.log(name, direction, period);
 		}
 	});
 
