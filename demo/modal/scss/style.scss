@@ -1,0 +1,56 @@
+body.modal-open {
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+#skrollr-body{
+	position:relative;
+	height:20000px;
+}
+
+#container{
+	position: relative;
+	height:100%;
+	width:100%;
+	background:#a7c9ae;
+}
+
+.date{
+	display:none;
+}
+
+#modal{
+	background:#fff;
+	overflow:hidden;
+	width:100px;
+	height:100px;
+	position:fixed;
+	top:400px;
+	left:50%;
+	color:#000;
+	transform:translate(-50%, -50%);
+	opacity:0;
+	display:none;
+
+	#modal-container{
+		position:relative;
+		#modal-body{
+			position:absolute;
+			left:50%;
+			transform:translateX(-50%);
+			margin-top:200px;
+			width:600px;
+			opacity:0;
+		}
+	}
+
+}
+
+#btn{
+	position:fixed;
+	top:200px;
+	left:20px;
+	cursor:pointer;
+	color:red;
+}

@@ -33,7 +33,8 @@ module.exports = function(grunt)
 		'responsive_images',
 		'menu_baccarat',
 		'detect_period',
-		'period_transition'
+		'period_transition',
+		'modal'
 	];
 
 	var grunt_task_init ={
