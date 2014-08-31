@@ -54,6 +54,14 @@
 		}
 	});
 
+	$(window).on('resize', function()
+	{
+		if($('body').hasClass('modal-open'))
+		{
+			_$modal.css({ width : $(window).width(), height : $(window).height()});
+		}
+	});
+
 
 
 })(jQuery);
