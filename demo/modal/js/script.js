@@ -12,7 +12,7 @@
 		_$modal.css({display:'block', overflow:'auto'});
 		_$modal.animate({opacity:1}, 300, function()
 		{
-			_$modal.animate({ width : $(window).width(), height : $(window).height()}, 300, function()
+			_$modal.animate({ width : $(window).width(), height : $(window).height(), top:0}, 300, function()
 			{
 				_$modalBody.html(content);
 				_$modalBody.animate({opacity:1});
@@ -26,7 +26,7 @@
 		_$modal.css({overflow:'hidden'});
 		_$modalBody.animate({opacity:0}, 300, function()
 		{
-			_$modal.animate({width : '100px', height : '100px', }, 300, function()
+			_$modal.animate({width : '100px', height : '100px', top: '400px'}, 300, function()
 			{
 				_$modal.animate({opacity:0}, 300, function()
 				{
